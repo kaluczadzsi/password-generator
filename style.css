@@ -19,6 +19,7 @@ body {
   background-color: rgb(67, 30, 103);
   width: 400px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: auto;
 }
 
 .pw-header {
@@ -41,9 +42,9 @@ body {
   background-color: #fff;
   border: none;
   right: 0;
+  top: 0;
   color: rgb(29, 2, 56);
   font-family: inherit;
-  transform: translate(0, -50%);
   font-weight: bold;
   transition: opacity 0.2s ease, transform 0.2s ease;
   opacity: 0;
@@ -52,7 +53,6 @@ body {
 .pw:hover button {
   opacity: 1;
   cursor: pointer;
-  transform: translate(0, -80%);
 }
 
 .pw-body {
