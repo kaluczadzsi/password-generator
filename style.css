@@ -5,6 +5,72 @@
 }
 
 body {
+  background-color: rebeccapurple;
+  color: #fff;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.pw-container {
+  background-color: rgb(67, 30, 103);
+  width: 400px;
+}
+
+.pw-header {
+  padding: 1rem;
+}
+
+.pw {
+  height: 70px;
+  width: 100%;
+  background-color: rebeccapurple;
+  display: flex;
+  position: relative;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.pw button {
+  position: absolute;
+  padding: 0.25rem;
+  background-color: #fff;
+  border: none;
+  right: 0;
+  color: rgb(29, 2, 56);
+  font-family: inherit;
+  transform: translate(0, -50%);
+  font-weight: bold;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+}
+
+.pw:hover button {
+  opacity: 1;
+  cursor: pointer;
+  transform: translate(0, -80%);
+}
+
+.pw-body {
+  padding: 1rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.generate {
+  background-color: #ecb602;
+  color: rebeccapurple;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+  display: block;
+  font-size: 1.5rem;
+  width: 100%;
 }
